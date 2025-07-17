@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@layer components {
+    .nav_links {
+        @apply flex-col sm:flex-row sm:items-center md:mr-4 duration-500 left-0 top-11 bg-green-700 w-full sm:static absolute;
+    }
+
+    .nav_links li {
+        @apply text-white py-3;
+    }
+
+    .nav_links a {
+        @apply w-full text-base sm:text-sm md:text-xl pl-3 sm:px-4 md:px-7 sm:py-0 sm:border-l;
+    }
+
+    .nav_links a:hover {
+        @apply font-bold;
+    }
+}
+
+@layer utilities {
+    
+}
