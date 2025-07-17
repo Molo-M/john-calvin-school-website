@@ -19,5 +19,7 @@
 }
 
 @layer utilities {
-    
+    header {
+        @apply w-full flex justify-between bg-green-700 items-center;
+    }
 }

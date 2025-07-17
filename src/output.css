@@ -342,7 +342,15 @@
     font-weight: var(--font-weight-bold);
   }
 }
-@layer utilities;
+@layer utilities {
+  header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-green-700);
+  }
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
