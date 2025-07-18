@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @layer components {
+    /* Section 1: The Navbar */
     .nav_links {
         @apply flex-col sm:flex-row sm:items-center md:mr-4 duration-500 left-0 top-11 bg-green-700 w-full sm:static absolute;
     }
@@ -15,6 +16,49 @@
 
     .nav_links a:hover {
         @apply font-bold;
+    }
+
+    /* Section 2.1: Home Page Image Slider */
+
+    .header_img {
+        @apply w-full flex-shrink-0 object-cover h-50 sm:h-116 w-full bg-black/60 relative;
+
+    }
+
+    .header_img img {
+        @apply w-full h-full object-cover object-[50%_20%] absolute mix-blend-overlay;
+    }
+
+    .header_img h1 {
+        @apply text-2xl sm:text-4xl text-white font-medium;
+    }
+
+    .header_img h3 {
+        @apply text-sm sm:text-base text-white;
+    }
+
+    #prev, #next {
+        @apply  absolute top-1/2 transform -translate-y-1/2 bg-white hover:bg-purple-300 p-2;
+    }   
+
+    /* Section 2.3: List of values */
+
+    .value {
+        @apply flex flex-col gap-3 w-80;
+    }
+
+    .value ion-icon {
+        @apply text-3xl mb-4;
+    }
+
+    .value h1 {
+        @apply text-2xl font-semibold;
+    }
+
+    /* Section 2.4: Contact message */
+
+    .contact_mssg a {
+        @apply bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded mt-2;
     }
 }
 
