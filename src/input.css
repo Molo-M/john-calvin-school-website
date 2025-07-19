@@ -30,11 +30,11 @@
     }
 
     .header_img h1 {
-        @apply text-2xl sm:text-4xl text-white font-medium;
+        @apply text-2xl sm:text-4xl text-white font-medium px-10 sm:px-0;
     }
 
     .header_img h3 {
-        @apply text-sm sm:text-base text-white;
+        @apply text-sm sm:text-base text-white px-10 sm:px-0;
     }
 
     #prev, #next {
@@ -44,7 +44,7 @@
     /* Section 2.3: List of values */
 
     .value {
-        @apply flex flex-col gap-3 w-80;
+        @apply flex flex-col gap-3 w-full sm:w-80 items-center sm:items-start;
     }
 
     .value ion-icon {
@@ -59,6 +59,14 @@
 
     .contact_mssg a {
         @apply bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded mt-2;
+    }
+
+    /* Section 3: Footer  */
+    .right_footer h1 {
+        @apply mb-2;
+    }
+    .right_footer p {
+        @apply text-gray-300;
     }
 }
 

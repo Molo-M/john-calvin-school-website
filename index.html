@@ -13,7 +13,7 @@
 </head>
 <body class="font-[Poppins]">
     <!-- Section 1: Nav bar -->
-    <header>
+    <header class="top-0 sticky z-10">
         <!-- 1.1: The logo for the school  -->
         <div class="logo flex gap-2 items-center sm:ml-3 bg-gray-300 px-4 sm:px-2">
             <img class="w-10 sm:w-10 md:w-15" src="assets/img/tree logo.png" alt="">
@@ -36,13 +36,13 @@
                     </li>
             </ul>
             <!-- 1.3: The menu bar for mobile view  -->
-            <ion-icon onclick="toggleMenu(this)" class="text-3xl cursor-pointer sm:hidden" name="menu-outline"></ion-icon>
+            <ion-icon onclick="toggleMenu(this)" class="text-3xl cursor-pointer sm:hidden pr-5" name="menu-outline"></ion-icon>
         </nav>
     </header>
     <!-- Section 2: Main content  -->
     <main>
         <!-- Section 2.1: Home Page Image Slider -->
-        <div class="slider_container w-full flex items-center justify-center">
+        <div id="slider_container" class="w-full flex items-center justify-center">
             <div class="relative h-full overflow-hidden">
                 <div id="slider" class="flex transition-transform duration-700 ease-in-out">
                     <!-- Image item 1 -->
@@ -84,17 +84,17 @@
             </div>
         </div>
         <!-- Section 2.2: Core values -->
-        <div class="core_values flex gap-8 p-15">
-            <div class="left_container w-400">
+        <div class="core_values flex flex-col sm:flex-row gap-8 p-5 sm:p-15 text-center sm:text-start">
+            <div class="left_container w-full sm:w-400">
                 <p class="font-semibold mb-8">Excellence</p>
-                <h1 class="font-bold text-4xl">Discover our Core Values and Principles</h1>
+                <h1 class="font-bold text-2xl sm:text-4xl">Discover our Core Values and Principles</h1>
             </div>
             <div class="right_container">
                 <p>At John Calvin School, we are committed to nurturing students through Christian values. Our curriculum emphasizes quality education that fosters critical thinking and creativity. We believe in the power of community involvement to enrich the learning experience.</p>
             </div>
         </div>
         <!-- Section 2.3: List of values  -->
-        <div class="values_list p-15 flex justify-between">
+        <div class="values_list p-5 sm:p-15 flex flex-col sm:flex-row sm:justify-between gap-15 sm:gap-0 text-center sm:text-start">
             <!-- item 1 -->
              <article class="value">
                 <ion-icon name="star-outline"></ion-icon>
@@ -115,8 +115,8 @@
              </article>
         </div>
         <!-- Section 2.4: Contact message -->
-        <div class="contact_mssg flex gap-15 p-15 items-center">
-            <div class="left_container w-200 flex flex-col gap-3">
+        <div class="contact_mssg flex flex-col-reverse sm:flex-row gap-15 py-10 sm:p-15 items-center text-center sm:text-start">
+            <div class="left_container sm:w-200 flex flex-col gap-3 px-5 sm:px-0">
                 <h1 class="text-2xl font-semibold">Discover Our Vibrant Learning Environment</h1>
                 <p>Visit us today to see how we nurture young minds in a Christian setting.</p>
                 <div class="link_contact py-2">
@@ -124,13 +124,33 @@
                 </div>
             </div>
             <div class="right_container">
-                <img class="w-150" src="assets/img/single_student1.avif" alt="student studying">
+                <img class="w-full sm:w-150" src="assets/img/single_student1.avif" alt="student studying">
             </div>
         </div>
     </main>
     <!-- Section 3: Footer  -->
-     <footer>
-
+     <footer class="w-full bg-green-950">
+        <div class="footer_container flex flex-col sm:flex-row justify-between gap-8 sm:gap-18 text-white py-4 px-5 sm:px-15">
+            <div class="left_footer flex flex-col gap-6 w-full sm:w-110">
+                <h1 class="text-xl">John Calvin School of Muyumbu</h1>
+                <p class="text-gray-300">A Christ-centered primary school in Kigali, nurturing young minds with love, learning, and purpose.</p>
+                <a class="border p-2 w-50 text-center" href="#slider_container">Back to the top</a>
+            </div>
+            <div class="right_footer flex flex-col sm:flex-row gap-5 sm:gap-20">
+                <div class="hours_location">
+                    <h1>Opening Hours:</h1>
+                    <p>Weekdays: 08:00 AM - 16:00 PM</p>
+                    <p>Saturdays: 10:00 AM - 13:00 PM</p>
+                </div>
+                <div class="contact_info">
+                    <h1>Contacts:</h1>
+                    <p>+250781417108</p>
+                    <p>+250781417108</p>
+                    <p>info@johncalvin.com</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-white text-start sm:text-center text-sm py-4 px-5">© 2025 John Calvin School of Muyumbu. All rights reserved.</p>
      </footer>
     <!-- Useful js scripts -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
