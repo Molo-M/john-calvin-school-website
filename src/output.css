@@ -191,20 +191,11 @@
   .relative {
     position: relative;
   }
-  .sticky {
-    position: sticky;
-  }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .z-10 {
-    z-index: 10;
   }
   .z-\[-1\] {
     z-index: -1;
@@ -236,9 +227,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-full {
     height: 100%;
   }
@@ -251,20 +239,11 @@
   .w-full {
     width: 100%;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -384,13 +363,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
@@ -688,6 +660,9 @@
 }
 @layer utilities {
   header {
+    position: sticky;
+    top: calc(var(--spacing) * 0);
+    z-index: 10;
     display: flex;
     width: 100%;
     align-items: center;
@@ -724,11 +699,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -762,7 +732,6 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-translate-x: 0;
