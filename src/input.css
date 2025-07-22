@@ -68,6 +68,19 @@
     .right_footer p {
         @apply text-gray-300;
     }
+
+    /* Academics Main Section  */
+    .academics_content {
+        @apply bg-white p-5 rounded-2xl flex flex-col gap-3;
+    }
+
+    .academics_content img {
+        @apply w-70 rounded-xl;
+    }
+
+    .academics_content h1 {
+        @apply font-semibold text-xl;
+    }
 }
 
 @layer utilities {
