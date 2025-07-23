@@ -81,6 +81,23 @@
     .academics_content h1 {
         @apply font-semibold text-xl;
     }
+
+    /* News Main content  */
+    .news_item {
+        @apply bg-white shadow-xl p-5 rounded flex flex-col gap-3;
+    }
+
+    .news_item h1 {
+        @apply font-semibold text-xl;
+    }
+
+    .news_item p {
+        @apply text-gray-600;
+    }
+
+    .news_item a {
+        @apply hover:underline text-blue-800;
+    }
 }
 
 @layer utilities {
