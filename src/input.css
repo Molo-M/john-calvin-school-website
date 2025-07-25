@@ -98,10 +98,21 @@
     .news_item a {
         @apply hover:underline text-blue-800;
     }
+    /* contact us section  */
+
+    .right_contact_info a {
+        @apply hover:text-blue-800 hover:underline;
+    }
+
 }
 
 @layer utilities {
     header {
         @apply w-full flex justify-between bg-green-700 items-center top-0 sticky z-10;
+    }
+
+    /* contact us section  */
+    main span {
+        @apply font-semibold;
     }
 }
